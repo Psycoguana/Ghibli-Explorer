@@ -13,7 +13,7 @@ Ghibli Explorer is a website that can help you explore the different Ghibli Movi
 ![Desktop screenshot](./assets/dekstop.png)
 
 I built this website purely to help me learn how to develop websites using React.
-The site is deployed on Vercel and you can check it out here:
+The site is deployed on Vercel and you can check it out here: https://ghibli-explorer.vercel.app/
 
 # Tools I Used
 
