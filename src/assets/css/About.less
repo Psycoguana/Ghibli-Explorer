@@ -1,0 +1,54 @@
+@import './Variables.less';
+
+#container {
+	background-color: beige;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.list-divider {
+	width: 87%;
+	border-top: 0.1rem solid black;
+	opacity: 0.1;
+	margin: auto;
+
+	&.list-divider-header {
+		width: 100%;
+	}
+}
+
+.list {
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+	@media screen and (max-width: @desktop) {
+		margin-top: 10%;
+	}
+
+	.list-item {
+		@media screen {
+			@media (max-width: @tablet) {25
+				margin-top: 5%;
+			}
+
+			@media (max-width: @mobile) {
+			}
+		}
+		margin: auto;
+		margin-top:10%;
+	}
+}
+
+img.is-rounded {
+	@size: 90px;
+	max-width: @size;
+	max-height: @size;
+
+	@media screen and (max-width: @tablet) {
+		justify-content: center;
+		align-items: center;
+	}
+}

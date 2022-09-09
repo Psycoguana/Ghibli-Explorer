@@ -1,0 +1,66 @@
+@import './Variables.less';
+
+.home {
+	background-color: beige;
+}
+
+#search {
+	width: 30%;
+
+	margin: auto;
+	margin-bottom: 3%;
+
+	@media screen and (max-width: @tablet) {
+		width: 80%;
+	}
+
+	input {
+		text-align: center;
+		border-radius: 10px;
+
+		@shadow_offset_x: 10px;
+		@shadow_offset_y: 10px;
+		@blur: @shadow_offset_x * 2;
+		box-shadow: @shadow_offset_x @shadow_offset_y @blur #2e2e2e;
+	}
+}
+
+.App h1 {
+	@media screen and (max-width: @tablet) {
+		margin-top: 5%;
+	}
+
+	margin: 0;
+	padding: 2%;
+}
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
+}
+
+#cardContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	justify-items: center;
+	position: relative;
+}
+
+.card {
+	border-radius: 15px !important;
+}
+
+img.posterImage {
+	border-radius: 10px;
+	width: 100%;
+	transition: 0.2s;
+	@shadow_offset_x: 15px;
+	@shadow_offset_y: 15px;
+	box-shadow: @shadow_offset_x @shadow_offset_y 35px black;
+
+	&:hover {
+		box-shadow: 0 0 25px black, 0 0 25px black, 0 0 50px black;
+	}
+}

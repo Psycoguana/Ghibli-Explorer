@@ -1,0 +1,32 @@
+#details-container {
+  background-color: beige;
+}
+@media screen and (max-width: 769px) {
+  #details-container {
+    margin-top: 5%;
+  }
+  #details-container h1.subtitle {
+    margin-top: 10px;
+  }
+  #details-container img#poster {
+    width: 80%;
+  }
+}
+#details-container img#poster {
+  box-shadow: 5px 5px 15px black;
+}
+#details-container img.score {
+  max-width: 8%;
+  padding-top: 10px;
+}
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.detailsContainer img.score {
+  max-width: 8%;
+}
+.detailsContainer h4.description {
+  width: 50%;
+  vertical-align: center;
+}

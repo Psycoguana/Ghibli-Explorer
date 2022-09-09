@@ -1,0 +1,29 @@
+@import './Variables.less';
+
+.App {
+	text-align: center;
+	background-color: beige;
+
+	body {
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+			sans-serif;
+
+		> #root > div {
+			height: 100vh;
+		}
+	}
+
+	h1 {
+		@media screen and (max-width: @tablet) {
+			margin-top: 5%;
+		}
+
+		margin: 0;
+		padding: 2%;
+	}
+}
+
+.footer {
+	margin-top: auto;
+	padding: 2rem !important;
+}

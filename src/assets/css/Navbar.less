@@ -1,0 +1,32 @@
+@import './Variables.less';
+
+.navbar,
+#navMenu {
+	@radius: 15px;
+	border-bottom-left-radius: @radius;
+	border-bottom-right-radius: @radius;
+
+	.navbar-item {
+		&.has-dropdown {
+			@media screen and (max-width: @tablet) {
+				.navbar-dropdown {
+					display: none;
+				}
+			}
+
+			&.is-active {
+				.navbar-dropdown {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: @tablet) {
+		.divider {
+			margin: auto;
+			width: 80%;
+			border-top: 0.1rem solid #fcfcfc;
+		}
+	}
+}

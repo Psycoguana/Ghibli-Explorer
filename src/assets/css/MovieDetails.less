@@ -1,0 +1,42 @@
+@import './Variables.less';
+
+#details-container {
+	background-color: beige;
+
+	@media screen and (max-width: @tablet) {
+		margin-top: 5%;
+
+		h1.subtitle {
+			margin-top: 10px;
+		}
+
+		img#poster {
+			width: 80%;
+		}
+	}
+
+	img#poster {
+		@shadow_offset_x: 5px;
+		@shadow_offset_y: 5px;
+		box-shadow: @shadow_offset_x @shadow_offset_y 15px black;
+	}
+
+	img.score {
+		max-width: 8%;
+		padding-top: 10px;
+	}
+}
+
+.detailsContainer {
+	display: grid;
+	grid-template-columns: 60% 40%;
+
+	img.score {
+		max-width: 8%;
+	}
+
+	h4.description {
+		width: 50%;
+		vertical-align: center;
+	}
+}

@@ -1,0 +1,23 @@
+.navbar,
+#navMenu {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@media screen and (max-width: 769px) {
+  .navbar .navbar-item.has-dropdown .navbar-dropdown,
+  #navMenu .navbar-item.has-dropdown .navbar-dropdown {
+    display: none;
+  }
+}
+.navbar .navbar-item.has-dropdown.is-active .navbar-dropdown,
+#navMenu .navbar-item.has-dropdown.is-active .navbar-dropdown {
+  display: block;
+}
+@media screen and (max-width: 769px) {
+  .navbar .divider,
+  #navMenu .divider {
+    margin: auto;
+    width: 80%;
+    border-top: 0.1rem solid #fcfcfc;
+  }
+}
