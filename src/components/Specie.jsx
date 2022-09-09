@@ -41,10 +41,11 @@ export default function Specie() {
 		setCharacters(rawCharacters);
 	}, []);
 
-	function findMovieById(id) {
-		const movie = films.filter((film) => film.url === id);
+	function findMovieById(movieUrl) {
+		let movie = films.filter((film) => film.url === movieUrl);
 		if (movie.length) {
-			return <a href={movie.url}>{movie[0].title}</a>;
+			movie = movie[0];
+			return <Link to={`/${movie.id}`}>{movie.title}</Link>;
 		}
 	}
 
