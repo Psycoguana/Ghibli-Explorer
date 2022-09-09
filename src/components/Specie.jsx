@@ -24,8 +24,6 @@ export default function Specie() {
 
 					data.films.forEach((film) => {
 						axios.get(film).then((response) => {
-							console.log(data);
-							console.log(response.data);
 							setFilms((oldState) => [...oldState, response.data]);
 						});
 					});
@@ -45,7 +43,9 @@ export default function Specie() {
 
 	function findMovieById(id) {
 		const movie = films.filter((film) => film.url === id);
-		return <a href={movie.url}>{movie[0].title}</a>;
+		if (movie.length) {
+			return <a href={movie.url}>{movie[0].title}</a>;
+		}
 	}
 
 	return (
